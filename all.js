@@ -12,6 +12,7 @@ function displayTasks(tasks) {
             const taskNumberCell = newRow.insertCell();
             const taskTitleCell = newRow.insertCell();
             const dateAddedCell = newRow.insertCell();
+            const statusAddedCell = newRow.insertCell();
 
             taskNumberCell.textContent = task.id;
 
@@ -22,6 +23,7 @@ function displayTasks(tasks) {
             taskTitleCell.appendChild(taskTitleAnchor);
 
             dateAddedCell.textContent = task.date;
+            statusAddedCell.textContent = task.status || "Pending";
         });
     }
 }

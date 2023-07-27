@@ -87,3 +87,6 @@ td {
 #taskDetails p {
     padding: 10px;
 }
+#custom_footer {
+    display: none;
+}

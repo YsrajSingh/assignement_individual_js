@@ -36,6 +36,7 @@ save_task.addEventListener("click", () => {
         title: title_data,
         description: description_data,
         date: today,
+        status: "Pending",
     });
 
     // Save the updated array back to local storage
