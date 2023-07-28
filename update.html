@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="/"> Contact Manager App </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/"> Home </a>
+                    </li>
+                    <li>
+                        <a href="/create.html"> Create New Contact </a>
+                    </li>
+
+                    <li>
+                        <a href="/details.html">Contact Description</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Update Existing Contact</h2>
+            <form action="#" class="contact_form">
+                <label for="contact_name">Contact Name</label>
+                <input
+                    type="text"
+                    id="contact_name"
+                    required
+                    name="contact_name"
+                    placeholder="Durgesh Gupta"
+                />
+                <br />
+                <label for="contact_number">Contact Number</label>
+                <input
+                    type="number"
+                    id="contact_number"
+                    max="10"
+                    min="10"
+                    required
+                    name="contact_number"
+                    placeholder="0000000000"
+                />
+                <br />
+                <label for="contact_email">Contact Email</label>
+                <input
+                    type="email"
+                    required
+                    id="contact_email"
+                    name="contact_email"
+                    placeholder="durgesh0715@gmail.com"
+                />
+                <br />
+                <label for="contact_address">Contact Address</label>
+                <input
+                    type="text"
+                    id="contact_address"
+                    required
+                    name="contact_address"
+                    placeholder="City, State, Zip"
+                />
+                <br />
+                <button type="button" id="update_contact">
+                    Update Contact
+                </button>
+            </form>
+        </main>
+        <script src="update.js"></script>
+    </body>
+</html>
