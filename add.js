@@ -45,5 +45,5 @@ save_task.addEventListener("click", () => {
     // Clear the input fields for the next entry
     task_title.value = "";
     task_description.value = "";
-    window.location.replace("/all.html");
+    window.location.replace("./all.html");
 });

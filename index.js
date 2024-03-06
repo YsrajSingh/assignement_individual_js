@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const authenticated = dataFetcher();
     // If not authenticated, hide the welcome message, show the login form, and return
     if (!authenticated) {
-        // window.location.replace("/");
         navbar.style.display = "none";
         displayElement_1.style.display = "block";
         displayElement_2.style.display = "none";
